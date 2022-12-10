@@ -171,7 +171,32 @@ animation-play-state: paused;
 
 
 }
+nav {
+width: 25%;
+margin-right: 16%;
+justify-content: space-around;
+align-items: center;
 
+}
+
+nav > a {
+color: white;
+font-size: 16px;
+padding: 10px; 
+padding-right: 20px;
+padding-left: 20px;
+
+
+
+}
+
+nav > a:link,
+nav > a:visited,
+nav > a:hover,
+nav > a:active {
+	text-decoration: none; 
+	color: unset;
+}
 
 </style>
 
@@ -180,12 +205,21 @@ animation-play-state: paused;
 	<p style="pointer-events: none;">Welcome to DiscordAlternative</p>
 </splashscreen>
 
-<section style="justify-content: left;">
-	<logo style="font-family: 'Pontano Sans', sans-serif; font-weight: bold;">
-		<h1 id="Discord Alternative." style="margin: 0;">DiscordAlternative</h1>
-	</logo>
-	<nav></nav>
-</section>
+<header style="display: flex; justify-content: space-between;">
+	<section style="justify-content: left;">
+		<logo style="font-family: 'Pontano Sans', sans-serif; font-weight: bold;">
+			<h1 id="Discord Alternative." style="margin: 0;">DiscordAlternative</h1>
+		</logo>
+		<nav></nav>
+	</section>
+	<nav style="display: flex;">  
+		<a href="#" >About</a>  
+		<a href="#" >More</a>  
+		<a href="#" style="background: violet; border-radius: 5px; background: #7289DA;     box-shadow: 0px 0px 10px #181818;">Contribute</a>  
+	</nav>
+
+</header>
+
 
 <section>
 <p>
