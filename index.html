@@ -1,185 +1,340 @@
 <!DOCTYPE html>
-<html lang = "en">
-
+<html lang="en">
 <head>
-  
+	<meta charset="UTF-8" />
 	<title>DiscordAlternative | Welcome | 19+ server</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Roboto&display=swap" rel="stylesheet">
-      
-      <meta charset="UTF-8" />
-	  
-      <meta name = "keywords" content = "Discord, Disboard, Alternative, Discord alternative, Linux, Programming, revolt, revolt.js, revolt.chat, chatting, talking, chat, voice, messaging, platform, chatroom, server, app, communication, online, group, text, messaging app, real-time, social, chatbot" />
-      <meta name = "description" content = "A small alternate non-discord server/guild for people that care about things. Join the server if you want to help out. " />
-      <meta name = "author" content = "Welcome | 19+ server" />
-	  
+	<link rel="icon" href="./favicon.ico">
+	
+    <meta name = "author" content = "Welcome | 19+ server" />
+	<meta name = "description" content = "A small Discord alternative server for people that care about things. Join the server if you want to help out. " />
+	<meta name = "keywords" content = "Discord, Disboard, Alternative, Discord alternative, Linux, Programming, revolt, revolt.js, revolt.chat, chatting, talking, chat, voice, messaging, platform, chatroom, server, app, communication, online, group, text, messaging app, real-time, social, chatbot" />
 
-	  <link rel="icon" href="./favicon.ico">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  
-	  <meta property='og:type' content='website'>
-	  <meta property="og:image"  content="https://i.imgur.com/ZtsZUJd.png">
-	  <link rel='canonical'       href='https://discordalternative.xyz/'>
-	  <meta property='og:url'  content='https://discordalternative.xyz/'>
-	  <meta property="og:image:width" content="170" />
-	  <meta property="og:image:height" content="48" />
-	  
-	  
+	<meta property='og:type'			content='website'>
+	<meta property="og:image"			content="https://i.imgur.com/ZtsZUJd.png">
+	<link rel='canonical'				href='https://discordalternative.xyz/'>
+	<meta property='og:url'				content='https://discordalternative.xyz/'>
+	<meta property="og:image:width" 	content="170" />
+	<meta property="og:image:height"	content="48" />
 
-	  
+	
+	<!-- Google Fonts. -->
+	<!--   [00.] Establish early connection to Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Roboto&display=swap" rel="stylesheet">
+	
+	<!--   [01.] Import custom fonts from Google Fonts. -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Roboto&display=swap');
+	</style>
+
+	<!-- General website CSS. -->
+	<!-- [1.] Standard CSS support for Mobile phones. -->
+	<!--      Sets the webpage viewport width to the device width with some initial scale. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- [2.] CSS Tweaks for Mobile phones. -->
+	<style>
+		@media only screen and (max-width: 600px) {
+			header {
+				justify-content: center !important;
+
+			}
+			
+			body {
+				margin: unset !important;
+			}
+			
+			logo {
+				margin-left: unset !important;
+			}
+			
+			nav {
+				margin-right: unset !important;
+			
+			}
+			
+			header > nav > a {
+				padding-right: 1em !important;
+				padding-left: 1em !important;
+			
+			}
+			
+			main > p {
+				margin: 23px !important;
+				text-align: center;
+			}
+			
+
+			main > section > item > item-header {
+				padding-left: 4% !important; 
+				padding-top: 4% !important;
+			}
+			
+			main > section > item > item-body {
+				padding-left: 4% !important; 
+				padding-right: 4% !important;
+			}
+			
+			main > section > item > item-footer {
+				padding-bottom: 4% !important; 
+			}
+			
+
+		}
+	</style>
+	
+	<!-- [3.] The complete CSS of this webpage. -->
+	<style>
+		body {
+			background: #2C2F33;
+			font-family: 'Roboto', sans-serif;
+			color: white;
+			
+
+			margin-left: 38px;
+			margin-top: 30px;
+		}
+	/* [4.] Header of this webpage. */
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		
+		}
+		
+		header > logo {
+			font-family: 'Pontano Sans', sans-serif;
+			color: white;
+			margin-left: 2%;
+		}
+		
+		header > logo > a > h1 {
+			font-size: 24px;
+		}
+		
+	/* [5.] Navigation of this webpage. */
+		
+		header > nav {
+			margin-right: 16%;
+		}
+		
+		header > nav > a:link,
+		header > nav > a:visited,
+		header > nav > a:hover,
+		header > nav > a:active {
+			text-decoration: unset; 
+			color: unset;
+
+		}
+		
+		header > nav > a {
+			display: inline-block;
+			padding-top: 0.625em;
+			padding-bottom: 0.625em;
+			padding-right: 1.25em;
+			padding-left: 1.25em;
+			
+			letter-spacing: -0.4px;
+			border-radius: 0.3em;
+			
+	
+			
+		}
+		
+		header > nav > a:last-child {
+			background: #7289da;
+			box-shadow: 0px 0px 10px #181818;
+		}
+		
+		header > nav > a:last-child:active {
+			background-color: #5e78d5;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}		
+		
+	/* [6.] Main content of this webpage. */
+		
+		main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		
+		}
+		main > p {
+			margin-top: 0.2em;
+			margin-left: 2em;
+			
+		}
+		
+	/* [7.] Footer and others of this webpage. */
+	
+		header > logo > a:link,
+		header > logo > a:visited,
+		header > logo > a:hover,
+		header > logo > a:active {
+			text-decoration: unset; 
+			color: unset;
+
+		}
+		
+		a:visited {
+		  color: pink;
+		}
+
+		a {
+		  color: pink;
+		}
+		
+		
+		item-footer > a:link,
+		item-footer > a:visited,
+		item-footer > a:hover,
+		item-footer > a:active {
+			text-decoration: unset; 
+			color: unset;
+
+		}
+		
+		
+		item-footer > a#join-server {
+			background: #7289da;
+			box-shadow: 0px 0px 10px #181818;
+			border-radius: 10px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			padding-right: 30px;
+			padding-left: 30px;
+			
+		}
+		
+		item-footer > a#join-server:active {
+			background-color: #5e78d5;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}	
+		
+		item > * {
+			padding: 4%;
+		}
+
+	</style>
+	
+</head>
+<body>
+
 <style>
-
-
-
-@media only screen and (max-width: 600px) {
-
-	#introduction {
-		margin: 20px;
-	}
-
-	nav {
-		margin-right: 0 !important;
-	
-	}
-	header {
-		justify-content: center !important;
-	}
-
-	h1 {
-	margin-block-start: 0;
-    margin-block-end: 0;
-	
-	}
-
-
-	p {   text-align: center;}
-
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    margin: 4px !important;
-    margin-top: 8px !important;
-  }
-
-  
-  blockquote {
-  margin: 0px !important;
-  white-space: break-spaces !important;
-  padding: 0.5em 11px !important;
-
-  
-  }
+hidden:hover {
+opacity: 100% !important;
 }
-
-
-img {
-
-	filter: drop-shadow(0 0 0.75rem #000000);
-}
-
-button {
-	transition: all 0.1s ease;
-	filter: brightness(100%);
-}
-
-button:hover {
-	filter: brightness(110%);
-}
-
-
-
-a:visited {
-  color: pink;
-}
-
-a {
-  color: pink;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Roboto&display=swap');
-
-
-body {
-	background: #2C2F33;
-	color: white;
-	margin-top: 40px;
-	margin-left: 80px;
-	font-family: 'Roboto', sans-serif;
-	
-}
-
-
-button {
-
-height:30px; width:150px;  background: #7289DA; 
-font-family: 'Roboto', sans-serif; 
-border-radius: 10px; border: none;
-font-size: 15px;
-color: white;
-margin: 10px;
-}
-
-button:active {
-  background-color: #5e78d5;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
-#contribute:active {
-
-  background-color: #5e78d5;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-
-}
-
-
-
-section {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-img {
-
-margin: 10px;
-}
-
-blockquote {
-  background: #23272a;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  box-shadow: 5px 10px 16px 1px #222121;
-}
-
-splashscreen {
-
-background: #2C2F33;
-width: 100%;
-height: 100%;
+</style>
+<hidden style="    
+opacity: 2%;
 position: absolute;
-z-index: 1000;
-top: 0;
-left: 0;
-z-index: 1000;
+    top: 0;
+    left: 0;">
+<a href="https://www.google.com/search?q=site%3Adiscordalternative.xyz" title="Check if webpage is available in search engine.">Check</a>
 
-animation: fadein 3s;
-animation-fill-mode: forwards;
-animation-play-state: paused;
+</hidden>
+<hidden style="    
+opacity: 2%;
+position: absolute;
+    top: 0;
+    right: 0;">
+<a href="https://search.google.com/search-console" title="Google Search Engine Console">GSEC</a>
+
+</hidden>
+
+<header>
+	<logo>
+		<a href=""><h1>DiscordAlternative</h1></a>
+	</logo>
+	<nav>
+		<a id="index_page_link" href="./index.html" title="Index of the proposed alternatives">Index</a><!--
+		--><a id="more_page_link" href="./more.html" title="Additional information about this Webpage.">More</a><!--
+		--><a id="license_page_link" href="https://github.com/publicdomain-nocopyright/discordalternative.xyz/blob/main/LICENSE" title="License of the whole project.">License</a><!--
+		--><a id="contribute_page_link" href="https://github.com/publicdomain-nocopyright/discordalternative.xyz/blob/main/index.html" title="Update this Webpage with your own content.">Contribute</a>
+	</nav>
+</header>
+<main>
+	<p id="introduction">
+	Here I propose an alternative that is <a href="https://revolt.chat/"> revolt.chat</a>.
+	If you are helpful, kind and love to help with programming you can join my little server.
+	And togther we can improve things. 
+	</p>
+	<section style="display: grid;">
+		<item id="1" style="display: flex; flex-direction: column; background: #23272a; margin-bottom: 2%;     border: solid 1px black;">
+			<item-header style="display: flex; background: #1d1d24;"> 
+				<server-icon style="margin-right: 5%;">
+				
+					<!-- object is not draggable like img for some reason --> 
+					<img height="60px" width="60px"  src="https://discordalternative.xyz/favicon.ico" style="box-shadow: 0px 0px 5px #d5ffb6;
+    border-radius: 30px; object-fit: contain; background: url('1479.png'); background-size: contain;"></object>
+				</server-icon>
+				<item-information style="display: flex; flex-direction: column; width: -webkit-fill-available;">
+					<item-title>
+						Welcome 19+
+					</item-title>
+					<item-category style="color: darkgrey;">
+						Programming
+					</item-category>
+					<item-provider style="color: darkgrey; display: flex; align-items: center;">
+						<img src="https://avatars.githubusercontent.com/u/57727799?s=200&v=4" height="16px" style="margin-right: 1px;">revolt.chat
+					</item-provider>
+				</item-information>
+				<item-tags-area style="width: -webkit-fill-available; display: flex; justify-content: flex-end; flex-wrap: wrap;">
+					<item-tags>
+						<tag style="display: inline-block; margin: 6px;" title="Access to guild's information is not restricted.">Open</tag>
+						<tag style="display: inline-block; margin: 6px;" title="This guild is free to enter.">Free</tag>
+						<tag style="display: inline-block; margin: 6px;" title="This guild is not private.">Public</tag>
+					</item-tags>
+				</item-tags-area>
+			</item-header>
+			<item-body style="">
+				<!-- Tabs can be inserted using &emsp; -->
+				<text style="white-space: pre-line;">⚠️𝐍𝐨 𝐑𝐮𝐬𝐭 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞, 𝐭𝐡𝐚𝐧𝐤𝐬.
+				A small server for people that care about things.
+				Join the server if you want to help and write a bot.
+				Also join, if you have experience with Discord servers and want to help.
+
+				A workshop server. Developing towards general good.
+				Public Domain and Open Source.</text>
+			</item-body>
+			<item-footer style="display: flex; justify-content: center; align-items: center;     padding-top: unset;">
+				<a id="join-server" href="https://rvlt.gg/Awb710W8">Join Server</a>
+				<attribute title="Guild: Not Safe For Work." style="margin: 3%; color: #a33737; font-weight: bold;">NSFW</attribute>
+			</item-footer>
+		</item>
+	</section>
+	<notice style="margin: 5px; text-align: center;">Press the Contribute button if you want your alternative to Discord appear on this website.</notice>
+</main>
+<footer style="display: flex; justify-content: center;">
+	<a href="https://github.com/publicdomain-nocopyright/discordalternative.xyz">Public Domain. No Rights Reserved.</a>
+
+</footer>
+
+
+
+<style>
+splashscreen {
+	background: #2C2F33;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	
+	animation: fadein 3s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
 }
 
 @keyframes fadein {
     0% {
         opacity: 1;
-
-
     }
     25% {
         opacity: 1;
@@ -194,124 +349,20 @@ animation-play-state: paused;
 		 pointer-events: none;
 
     }
-	
-
 
 }
-nav {
-margin-right: 16%;
-justify-content: space-around;
-align-items: center;
-
-}
-
-nav > a {
-color: white;
-font-size: 16px;
-padding: 10px; 
-padding-right: 20px;
-padding-left: 20px;
-    letter-spacing: -0.4px;
-
-
-}
-
-nav > a:link,
-nav > a:visited,
-nav > a:hover,
-nav > a:active {
-	text-decoration: none; 
-	color: unset;
-}
-
-
-
 
 </style>
-
-	  
-</head>
-
-
 <splashscreen style="display: flex;     justify-content: center;     align-items: center;">
 	<img alt="Website's splashscreen character" src="https://i.imgur.com/1d0vjly.gif">
 	<p style="pointer-events: none;">Welcome to DiscordAlternative</p>
 </splashscreen>
 
-
-
-
-
-<header style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-	<section style="justify-content: left;">
-		<logo style="font-family: 'Pontano Sans', sans-serif; font-weight: bold;">
-			<h1 id="Discord Alternative." style="margin: 0;">DiscordAlternative</h1>
-		</logo>
-	</section>
-
-	<nav style="display: flex;">  
-		<a href="./index.html" >Index</a>  
-		<a href="./more.html" >More</a>  
-		<a href="https://github.com/publicdomain-nocopyright/discordalternative.xyz/blob/main/LICENSE" >License</a>  
-		<a id="contribute" href="https://github.com/publicdomain-nocopyright/discordalternative.xyz/blob/main/index.html" style="background: violet; border-radius: 5px; background: #7289DA;     box-shadow: 0px 0px 10px #181818;">Contribute</a>  
-	</nav>
-
-</header>
-
-
-<section>
-<p id="introduction">
-Here I propose an alternative that is <a href="https://revolt.chat/"> revolt.chat</a>. 
-If you are helpful, kind and love to help with programming you can join my little server.
-And togther we can improve things. 
-</p>
-</section>
-
-
-<section>
-	<blockquote style="white-space: pre; border-radius: 20px;">
-<section style="border-bottom: solid 1px #121212e0;"><img alt="Server's Logo" src="https://i.imgur.com/Q4MaC4M.png"></section>
-⚠️𝐍𝐨 𝐑𝐮𝐬𝐭 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞, 𝐭𝐡𝐚𝐧𝐤𝐬.
-A small server for people that care about things.
-Join the server if you want to help and write a bot.
-Also join, if you have experience with Discord servers and want to help.
-
-A workshop server. Developing towards general good.
-Public Domain and Open Source.
-<section style="margin-top: 35px;">
-
-
-
-	<a href="https://rvlt.gg/Awb710W8"><button>Join Server</button></a> <indicator style="color: #a33737;
-    font-weight: bold;">(NSFW)</indicator>
-
-</section>
-<section style="margin: 10px;"><a href="https://github.com/publicdomain-nocopyright/discordalternative.xyz">Public Domain. No rights reserved. </a></section>
-	</blockquote>
-	
-</section>
-
-<!--
-<footer>
-	<section>
-	If you have a better alternative, please update this page.
-	</section>
-</footer>
--->
 <style>
 splashscreen {
 animation-play-state: running;
 }
 </style>
 
-
-<footer>
-	<section>
-	<a href="https://www.google.com/search?q=site%3Adiscordalternative.xyz">Check if webpage is available in search engine.</a>
-	</section>
-</footer>
-
-
-
-
+</body>
 </html>
