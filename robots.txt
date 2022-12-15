@@ -1,0 +1,4 @@
+# https://stackoverflow.com/questions/4276957/how-to-configure-robots-txt-to-allow-everything/44467157#44467157
+# If you want to allow every bot to crawl everything, this is the best way to specify it in your robots.txt
+User-agent: *
+Disallow:
