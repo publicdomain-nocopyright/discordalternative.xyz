@@ -2,3 +2,8 @@
 # If you want to allow every bot to crawl everything, this is the best way to specify it in your robots.txt
 User-agent: *
 Disallow:
+
+# Don't forget only an absolute URL is allowed.
+# Don't forget to capitalise the first letter in "sitemap"
+# Don't forget to put space after "Sitemap:"
+Sitemap: https://discordalternative.xyz/sitemap.xml
