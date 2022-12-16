@@ -10,3 +10,5 @@ jobs:
       - name: generate-sitemap
         # uses: cicirello/generate-sitemap@105142a5bf05423bb574324f566ba3d265001004
         uses: cicirello/generate-sitemap@v1.9.0
+        with:
+          base-url-path: https://discordalternative.xyz/
