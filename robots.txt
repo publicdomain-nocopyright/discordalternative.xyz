@@ -2,6 +2,10 @@
 # robots.txt specification http://www.robotstxt.org/orig.html#format
 # sitemap.xml specification https://sitemaps.org/protocol.html
 
+# Main Domain redirect to https causes "Not Indexed" notices in Google Search Console Pages Report.
+# This might resolve the issue.
+Host: https://discordalternative.xyz
+
 # https://stackoverflow.com/questions/4276957/how-to-configure-robots-txt-to-allow-everything/44467157#44467157
 # If you want to allow every bot to crawl everything, this is the best way to specify it in your robots.txt
 User-agent: *
