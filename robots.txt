@@ -1,3 +1,4 @@
+# Quick Guide https://yoast.com/ultimate-guide-robots-txt/
 # robots.txt specification http://www.robotstxt.org/orig.html#format
 # sitemap.xml specification https://sitemaps.org/protocol.html
 
