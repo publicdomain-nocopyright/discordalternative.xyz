@@ -57,7 +57,7 @@
 
 			}
 			
-			body {
+			container {
 				margin: unset !important;
 			}
 			
@@ -102,7 +102,10 @@
 	
 	<!-- [3.] The complete CSS of this webpage. -->
 	<style>
-		body {
+		body { margin: unset; background: #2C2F33;}
+	
+		container {
+			display: block;
 			background: #2C2F33;
 			font-family: 'Roboto', sans-serif;
 			color: white;
@@ -239,7 +242,8 @@
 	</style>
 	
 </head>
-<body>
+<body><container>
+
 <header>
 	<logo>
 		<a href="./index.html" title="Reload Alternatives Webpage.">
@@ -307,9 +311,9 @@ Programming is the creation of instructions for a computer to complete a task, u
 	</section>
 	<notice style="margin: 5px; text-align: center;">Press the Contribute button if you want your alternative to Discord appear on this website.</notice>
 </main>
-<footer style="display: flex; justify-content: center;">
+<footer style="display: flex; flex-direction:column; justify-content: center; align-items: center;">
 	<a href="https://github.com/publicdomain-nocopyright/discordalternative.xyz">Public Domain. No Rights Reserved.</a>
-
+	
 </footer>
 
 
@@ -383,5 +387,28 @@ opacity: 100% !important;
 }
 </style>
 
+
+
+</container>
+
+
+<style>
+		backlinks > a:link,
+		backlinks > a:visited,
+		backlinks > a:hover,
+		backlinks > a:active {
+			text-decoration: unset; 
+			color: unset;
+
+		}
+		backlinks > a {
+			font-family: "Times New Roman";		
+			font-size: 16px;		
+			margin-right: 30px;
+		}
+</style>
+<backlinks style=" display:flex; justify-content: flex-start;     flex-wrap: wrap; background: #292b2e; position: relative; margin: 20px; color: gray; padding: 10px; margin-top: 16vw;">
+	<a href="https://www.reddit.com/r/RedditAlternatives/comments/zrpvc4/discordalternative_welcome_19_server_alternative/">Reddit post r/RedditAlternatives</a>
+</backlinks>
 </body>
 </html>
