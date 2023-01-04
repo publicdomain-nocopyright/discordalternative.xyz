@@ -37,11 +37,11 @@
 	<!--   [00.] Establish early connection to Google Fonts. -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pontano+Sans&family=Roboto&display=swap" rel="stylesheet">
 	
 	<!--   [01.] Import custom fonts from Google Fonts. -->
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Roboto&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pontano+Sans&family=Roboto&display=swap');
 	</style>
 
 	<!-- General website CSS. -->
@@ -471,5 +471,95 @@ opacity: 100% !important;
 <backlinks style=" display:flex; justify-content: flex-start;     flex-wrap: wrap; background: #292b2e; position: relative; margin: 20px; color: gray; padding: 10px; margin-top: 16vw;">
 	<a href="https://www.reddit.com/r/RedditAlternatives/comments/zrpvc4/discordalternative_welcome_19_server_alternative/" title="Reddit Thread /r/RedditAlternatives">Reddit post r/RedditAlternatives</a>
 </backlinks>
+
+
+<style>
+hiddensidebar > *:hover {
+	color: white;
+}
+
+hiddensidebar {
+
+color: #b9bbbe;
+font-family: 'Roboto', sans-serif;
+
+--hiddensidebar-width: 200px;
+width: var(--hiddensidebar-width);
+
+background: #36393f; 
+position: fixed; 
+top: 0; 
+left: calc( -1 * var(--hiddensidebar-width) + 1px); 
+height: 100%; 
+opacity: 0%; 
+
+
+transition: all 0.4s ease-in-out;
+}
+
+/*
+hiddensidebar:not(:hover) {
+
+
+
+}
+*/
+
+hiddensidebar:hover {
+opacity: 100% !important;
+left: 0px;
+
+
+}
+
+
+
+
+</style>
+
+<hiddensidebar style="display: flex; flex-direction: column; cursor: default; ">
+	<sidebar-item style="align-self: center; margin-top: 5px; color: white;">
+		DiscordAlternative Tools
+	</sidebar-item>
+	
+	<sidebar-item style="display: flex;
+    justify-content: center;">
+		<img height="60px" src="gato.png">
+	</sidebar-item>
+	
+	<sidebar-item style="font-size:16px; font-family: 'Open Sans', sans-serif; text-align: center; ">
+		<texts style="vertical-align: top;">Overview</texts><br>
+		
+
+
+	</sidebar-item>
+	
+	<sidebar-item>
+		<br>
+		<texts style="vertical-align: top;"></texts>
+		<icons style="color:#b9bbbe;">
+		
+		<texts style="vertical-align: top;"></texts>
+		</icons>
+	
+	</sidebar-item>	
+	
+	
+	<sidebar-item style="text-align: center;">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbFJREFUSEvVVNtRwzAQ3BMFkA5IA7Fx5HxjKsAdECoAKiB0EDoIHSQVYL4T5eE0AB1QANExMtaM4lceM2EGfXks6fZ291aEEy86cX38PcBaqSET+ccwI+ZVR8oH926JQapUAuDqGAAA756UUSNAxgC4PwaAgJedDFZKDQh4MgDmgga+msAE0LINMfDsSzloZLAFoPV1p9czktWu9XQasRBv5sBeAO4FygGajGetW0R0mTGuaKhksgsA4M6TcrSv8QcDWMrpbBZz3qWjVZ+AC1e7jRBBEATLRg/MZqoU12lqL1ex8qQsKVKZZAsA5okXhnGqVB9Et1tOMxvdW+6/QwDMaJ7b4BR8yWoy8Ci0XrIQQwA+A5++lO3iuNUxsGnOklkFYA11pCqlOM9SecRdfS3txWLRPtM6ewY2QiRBEHzkfm2x3Y/BfD4Cc6Y5AYNvISbF6TCTBaIbAP2sKNGr1+3+fjurUiI3zc5Z06lNtWGyZXBVimslqgFoeDCqn4laAKO30Dom5iiXob4484SJEi3E2PqyU6JiNaM3EUUaiM2eAMbMnHhhOG6k9evhadf/B/gBy67aGZjen5EAAAAASUVORK5CYII="/><notes style="vertical-align: super; color: #b9bbbe;">CSS3 Style Sheet Technology</notes><br>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa5JREFUSEvVle9RwkAQxd8eFIAVqAUQuDn8LFYgJWgFYgViB1qBWoFYgfhZbg6wAFOCBZhbZwNxQv5BmMEZdyafkrvfvbf3NoQ9F+15f/w9YGHtBMDpjsreAmP66bU5BfsHTKdjEJ3vpID5Jej1BpUK5taOCLiRj8j7s21ArNSrfMfAbceYUS1A++REelJaH+/v/VqAhbUXAB7iEzHPSKmvot2Jed42ZpgGALgMjHmsVJBZUHX4+MYsptMBiJ4TS7OKc7doDUD0RFG0dqKE+N1shlrrMNuzjQDn3FHD+8+ypmUlpQGRUgda6zVLC5O8sJZjycC9+BzboNRVoV/MRwDkQWBMbr9KAIDY56K+MHCtvJ+xUncAOnUBs9WiUoBkRPxOJX8eGNPNqixTkMyjMDDmWBY551oN7+OURkqNE6/n1oYEHCZq6wIkC0PfaLxprUXVbznnuiqKTolILJLKDbpVH/OtS9+M1NsQQJJqmZhxY5MqGhN1AVWhK5xDpQDJgvJ+QMz9jZOV+YWJJn7ZF1G5Vlv90SQHRNRnQJ6WAsbMPAl6vXGlrGWW9lv/H/ADsZbgGeLRYA8AAAAASUVORK5CYII="/><notes style="vertical-align: super; color: #b9bbbe;">HTML5 Markup Technology</notes>
+	
+	</sidebar-item>
+	
+	<sidebar-item style="text-align: center;">
+	<a href="https://boxicons.com/">1. Boxicons <br>Simple Open Source icons carefully crafted for designers & developers</a>
+	
+	
+	</sidebar-item>	
+
+	
+</hiddensidebar>
 </body>
 </html>
+
+
